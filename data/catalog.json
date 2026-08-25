@@ -1,0 +1,89 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Приводные цепи",
+      "name_en": "Drive chains",
+      "icon": "/assets/img/Drive.jpg",
+      "description": "Цепи для передачи движения в машинах и механизмах. Высокая износостойкость и точность шага.",
+      "description_en": "Chains for motion transmission in machines and mechanisms. High wear resistance and pitch accuracy.",
+      "products": [
+        { "name": "Цепь ПР-12,7", "step": "12,7 мм", "load": "18 кН" },
+        { "name": "Цепь ПР-19,05", "step": "19,05 мм", "load": "22 кН" },
+        { "name": "Цепь ПР-25,4", "step": "25,4 мм", "load": "35 кН" },
+        { "name": "Цепь ПР-31,75", "step": "31,75 мм", "load": "50 кН" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Тяговые пластинчатые цепи",
+      "name_en": "Traction plate chains",
+      "icon": "/assets/img/Traction.jpg",
+      "description": "Пластинчатые цепи для тяжёлых нагрузок: конвейеры, подъёмники, транспортёры.",
+      "description_en": "Plate chains for heavy loads: conveyors, elevators, transporters.",
+      "products": [
+        { "name": "Цепь ТП-16", "step": "16 мм", "load": "25 кН" },
+        { "name": "Цепь ТП-25", "step": "25 мм", "load": "40 кН" },
+        { "name": "Цепь ТП-40", "step": "40 мм", "load": "63 кН" },
+        { "name": "Цепь ТП-63", "step": "63 мм", "load": "100 кН" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Транспортные цепи",
+      "name_en": "Transport chains",
+      "icon": "/assets/img/Trans.png",
+      "description": "Цепи для конвейерных и транспортировочных систем с удлинённым шагом.",
+      "description_en": "Chains for conveyor and transport systems with extended pitch.",
+      "products": [
+        { "name": "Цепь ТР-25,4", "step": "25,4 мм", "load": "30 кН" },
+        { "name": "Цепь ТР-38,1", "step": "38,1 мм", "load": "45 кН" },
+        { "name": "Цепь ТР-50,8", "step": "50,8 мм", "load": "60 кН" },
+        { "name": "Цепь ТР-63,5", "step": "63,5 мм", "load": "80 кН" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Грузовые цепи",
+      "name_en": "Load chains",
+      "icon": "/assets/img/Load.jpg",
+      "description": "Высокопрочные грузовые цепи для подъёма, строповки и крепления грузов.",
+      "description_en": "High-strength load chains for lifting, slinging and securing cargo.",
+      "products": [
+        { "name": "Цепь ГР-8", "step": "8 мм", "load": "2 т" },
+        { "name": "Цепь ГР-10", "step": "10 мм", "load": "3,2 т" },
+        { "name": "Цепь ГР-13", "step": "13 мм", "load": "5,3 т" },
+        { "name": "Цепь ГР-16", "step": "16 мм", "load": "8 т" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Вильчатые цепи",
+      "name_en": "Fork chains",
+      "icon": "/assets/img/Fork.png",
+      "description": "Вильчатые цепи для работы в агрессивных условиях и под высокими нагрузками.",
+      "description_en": "Fork chains for operation in aggressive environments and under high loads.",
+      "products": [
+        { "name": "Цепь ВП-19,05", "step": "19,05 мм", "load": "20 кН" },
+        { "name": "Цепь ВП-25,4", "step": "25,4 мм", "load": "32 кН" },
+        { "name": "Цепь ВП-31,75", "step": "31,75 мм", "load": "45 кН" },
+        { "name": "Цепь ВП-38,1", "step": "38,1 мм", "load": "60 кН" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Цепи под заказ",
+      "name_en": "Custom chains",
+      "icon": "/assets/img/Custom.png",
+      "description": "Изготовление цепей по чертежам и техническим заданиям заказчика.",
+      "description_en": "Manufacturing of chains according to customer drawings and specifications.",
+      "products": [
+        { "name": "Цепь по чертежу заказчика", "name_en": "Chain by customer drawing", "step": "по заявке", "load": "по заявке" },
+        { "name": "Цепь с нестандартным шагом", "name_en": "Chain with non-standard pitch", "step": "по заявке", "load": "по заявке" },
+        { "name": "Цепь с покрытием", "name_en": "Coated chain", "step": "по заявке", "load": "по заявке" },
+        { "name": "Цепь из нержавеющей стали", "name_en": "Stainless steel chain", "step": "по заявке", "load": "по заявке" }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Завод Цепей имени Кирова – производство цепей полного цикла в России | Завод промышленных цепей</title>
+  <meta name="description" content="Производим приводные, тяговые, транспортные и грузовые цепи по ГОСТ и DIN. Изготовление под заказ по чертежам. Доставка по РФ. Запросите расчёт на сайте.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="cursor-chain" aria-hidden="true">
+    <span class="cursor-chain__link_nechet"></span>
+    <span class="cursor-chain__link_chet"></span>
+    <span class="cursor-chain__link_nechet"></span>
+    <span class="cursor-chain__link_chet"></span>
+    <span class="cursor-chain__link_nechet"></span>
+    <span class="cursor-chain__link_chet"></span>
+    <span class="cursor-chain__link_nechet"></span>
+    <span class="cursor-chain__link_chet"></span>
+    <span class="cursor-chain__link_nechet"></span>
+    <span class="cursor-chain__link_chet"></span>
+    <span class="cursor-chain__link_nechet"></span>
+  </div>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="/index.html" class="logo"></a>
+      <button class="hamburger" type="button" data-i18n-aria="header.aria.openMenu" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <ul class="nav__list">
+          <li><a href="#catalog" data-i18n="header.menu.catalog">Каталог</a></li>
+          <li><a href="#about" data-i18n="header.menu.about">О заводе</a></li>
+          <li><a href="#clients" data-i18n="header.menu.clients">Клиентам</a></li>
+          <li><a href="#contacts" data-i18n="header.menu.contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <a href="tel:+79045151927">+7 (904) 515-19-27</a>
+        <a href="mailto:zakaz@ZCK.ru">zakaz@ZCK.ru</a>
+        <button class="header__callback js-open-request" type="button" data-i18n="header.callback">Заказать звонок</button>
+      </div>
+      <div class="lang-switcher">
+        <button class="lang-switcher__btn lang-switcher__btn--active" type="button" data-lang="ru">RU</button>
+        <button class="lang-switcher__btn" type="button" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="scroll">
+      <section class="hero">
+        <div class="hero__slider">
+          <div class="hero__slide" style="background-image: url('/assets/img/proizvodstvo.jpg');">
+            <div class="hero__slide-inner">
+              <div class="hero__slide-content">
+                <h1 class="hero__title" data-i18n="hero.slide1.title">Производство промышленных цепей полного цикла</h1>
+                <p class="hero__subtitle" data-i18n="hero.slide1.subtitle">От проектирования до поставки по всей России</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__slide" style="background-image: url('/assets/img/technologii.jpg');">
+            <div class="hero__slide-inner">
+              <div class="hero__slide-content">
+                <h2 class="hero__title" data-i18n="hero.slide2.title">Современные технологии производства цепей</h2>
+                <p class="hero__subtitle" data-i18n="hero.slide2.subtitle">Собственное КБ, лаборатория и контроль качества</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__slide" style="background-image: url('/assets/img/dostavka.jpg');">
+            <div class="hero__slide-inner">
+              <div class="hero__slide-content">
+                <h2 class="hero__title" data-i18n="hero.slide3.title">Доставка промышленных цепей по всей России</h2>
+                <p class="hero__subtitle" data-i18n="hero.slide3.subtitle">Индивидуальные заказы и гарантия до 24 месяцев</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__cta">
+          <div class="hero__actions">
+            <a href="#catalog" class="btn btn--primary" data-i18n="hero.cta.catalog">Перейти в каталог</a>
+            <a href="#contacts" class="btn btn--secondary" data-i18n="hero.cta.contact">Связаться с нами</a>
+          </div>
+        </div>
+        <div class="hero__chain" id="hero-chain"></div>
+      </section>
+
+      <section class="catalog" id="catalog">
+        <div class="chain chain--left chain--catalog" ></div>
+        <div class="chain chain--right chain--catalog" ></div>
+        <div class="catalog__container">
+          <h2 class="catalog__title" data-i18n="catalog.title">Каталог продукции</h2>
+          <div class="catalog__grid" id="catalog-grid"></div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="chain chain--left chain--about"></div>
+        <div class="chain chain--right chain--about"></div>
+        <div class="about__container">
+          <h2 class="section-title" data-i18n="about.title">О заводе</h2>
+          <div class="about__subsection">
+            <h3 data-i18n="about.history.title">История и миссия</h3>
+            <p data-i18n="about.history.text">Завод начинал свой путь в конце 90‑х как небольшое инструментальное производство, специализировавшееся на ремонте и восстановлении тяговых органов для горно-обогатительных комбинатов. Постепенно, накапливая опыт реверсивного инжиниринга, мы перешли к собственному выпуску цепей, осваивая сначала простые калиброванные, а затем и высоконагруженные изделия для конвейеров и элеваторов. Сегодня наша производственная площадка — это результат эволюции, где многолетняя практика сочетается с современными подходами к организации процессов.</p>
+            <p data-i18n="about.history.text">Наша миссия — не просто поставлять металлоизделия, а предлагать решения, продлевающие межремонтный интервал оборудования заказчика. Мы считаем своей задачей снять с клиента головную боль по поиску аналогов, импортозамещению и адаптации цепей к реальным условиям эксплуатации, от северных морозов до горячих цехов. При этом мы остаёмся гибким производством, где каждый заказ рассматривается как индивидуальная инженерная задача.</p>
+          </div>
+          <div class="about__subsection">
+            <h3 data-i18n="about.production.title">Производство и технологии</h3>
+            <p data-i18n="about.production.text">На предприятии развёрнут полный цикл обработки металла: от резки проката и штамповки звеньев до термической обработки и финишной сборки. Основное оборудование — это универсальные автоматные линии и высокоточные станки с ЧПУ, позволяющие выдерживать допуски в пределах, требуемых для надёжного сцепления и плавного хода цепи. Особое внимание уделяется этапу закалки: мы используем регулируемые режимы термоупрочнения, подбирая их под конкретную марку стали, чтобы добиться баланса между твёрдостью поверхности и вязкостью сердцевины.</p>
+            <p data-i18n="about.production.text">В технологическом арсенале — методы индукционного нагрева, объёмно-закалочные среды и собственные приспособления для контроля натяжения при сборке. Применяются как контактная, так и стыковая сварка, причём каждая сварная точка проходит обязательную визуальную и инструментальную проверку. При этом мы не стремимся внедрять всё новое сразу, а поэтапно модернизируем участки, ориентируясь на реальный рост качества, а не на маркетинговые тренды.</p>
+          </div>
+          <div class="about__subsection">
+            <h3 data-i18n="about.quality.title">Сертификаты и качество</h3>
+            <p data-i18n="about.quality.text">Система контроля качества на заводе построена по принципу «от входа до выхода»: каждая партия металла сопровождается паспортами поставщиков, а на промежуточных стадиях действуют внутренние регламенты замеров геометрии и твёрдости. Мы работаем в соответствии с национальными стандартами, подтверждая соответствие нашей продукции требованиям промышленной безопасности и надёжности для ответственных узлов машин.</p>
+            <p data-i18n="about.quality.text">Кроме того, производственная система регулярно проходит оценку независимых органов — как отечественных, так и международных, что подтверждает её соответствие принятым в отрасли нормам управления качеством. Однако главным сертификатом для нас остаётся долгая безаварийная работа цепей на действующих предприятиях и положительные акты приёмочных испытаний, подписанные техническими службами заказчиков. Мы открыты для дополнительных проверок и испытаний по требованию клиента, но настаиваем на том, чтобы критерии качества обсуждались на этапе конструкторской проработки заказа — так мы исключаем разночтения на выходе.</p>
+          </div>
+          <div class="about__facts">
+            <p data-i18n="about.fact">Доставка в любой регион РФ</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="clients" id="clients">
+        <div class="chain chain--left chain--clients"></div>
+        <div class="chain chain--right chain--clients"></div>
+        <div class="clients__container">
+          <h2 class="section-title" data-i18n="clients.title">Клиентам</h2>
+          <div class="clients__subsection">
+            <h3 data-i18n="clients.howToOrder.title">Как заказать</h3>
+            <p data-i18n="clients.howToOrder.text">Оставьте свои контактные данные в форме и напишите что хотите заказать, мы свяжемся с вами в ближайшее время</p>
+          </div>
+          <div class="clients__subsection">
+            <h3 data-i18n="clients.payment.title">Оплата и доставка</h3>
+            <p data-i18n="clients.payment.text">Оплата проводится по предзаказу, доставка включается в стоимость.</p>
+          </div>
+          <div class="clients__subsection">
+            <h3 data-i18n="clients.warranty.title">Гарантия</h3>
+            <p data-i18n="clients.warranty.text">До 24 месяцев</p>
+          </div>
+          <div class="clients__subsection contacts" id="contacts">
+            <h3 data-i18n="clients.contacts.title">Контакты</h3>
+            <p><span data-i18n="clients.contacts.phoneLabel">Телефон:</span> <a href="tel:+79045151927">+7 (904) 515-19-27</a></p>
+            <p><span data-i18n="clients.contacts.emailLabel">E-mail:</span> <a href="mailto:zakaz@ZCK.ru">zakaz@ZCK.ru</a></p>
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name"><span data-i18n="requestForm.name">ФИО</span> <span class="required">*</span></label>
+                <input type="text" id="contact-name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-phone"><span data-i18n="requestForm.phone">Телефон</span> <span class="required">*</span></label>
+                <input type="tel" id="contact-phone" name="phone" required data-i18n-placeholder="requestForm.phonePlaceholder" placeholder="+7 (___) ___-__-__">
+              </div>
+              <div class="form-group">
+                <label for="contact-email"><span data-i18n="requestForm.email">E-mail</span> <span class="required">*</span></label>
+                <input type="email" id="contact-email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-message" data-i18n="requestForm.message">Сообщение / ТЗ</label>
+                <textarea id="contact-message" name="message" rows="3" data-i18n-placeholder="requestForm.messagePlaceholder" placeholder="Сообщение"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary" data-i18n="clients.contacts.button">Оставить заявку</button>
+            </form>
+            <div class="requisites">
+              <p data-i18n="clients.requisites">Реквизиты</p>
+            </div>
+          </div>
+          <div class="clients__subsection">
+            <h3 data-i18n="clients.faq.title">Вопрос-ответ</h3>
+            <div class="faq-accordion">
+              <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1" data-i18n="faq.q1.title">Вы изготавливаете только нестандартные цепи, или у вас есть готовые каталоги со стандартными позициями?</button>
+                <div class="faq-answer" id="faq-answer-1" aria-hidden="true">
+                  <p data-i18n="faq.q1.answer">Мы производим как стандартные (транспортерные, тяговые, роликовые по ГОСТ и DIN), так и усиленные/специализированные цепи под конкретные условия эксплуатации. Однако вся продукция изготавливается строго под заказ. У нас нет склада готовых изделий, так как даже «стандартная» цепь должна быть адаптирована под ваш тип привода и нагрузки. Поэтому в любом случае требуется заполнение опросного листа или формы заказа на сайте — это гарантирует, что вы получите изделие с нужным шагом, прочностью и типом термообработки.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2" data-i18n="faq.q2.title">Почему нельзя просто купить цепь с конвейера, и зачем мне заполнять сложную форму?</button>
+                <div class="faq-answer" id="faq-answer-2" aria-hidden="true">
+                  <p data-i18n="faq.q2.answer">Форма заказа — это не бюрократия, а этап технической безопасности. Промышленная цепь работает в жестких условиях: вибрация, абразив, ударные нагрузки, температура. Без анализа этих параметров (длина, шаг, диаметр валика, способ соединения) мы не можем гарантировать ресурс. Кроме того, поскольку производство запускается именно под ваш заказ, форма позволяет технологам сразу рассчитать себестоимость и точно определить сроки, чтобы избежать ошибок в спецификации.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3" data-i18n="faq.q3.title">Почему вы работаете по 100% предоплате? Как я могу быть уверен, что деньги не пропадут?</button>
+                <div class="faq-answer" id="faq-answer-3" aria-hidden="true">
+                  <p data-i18n="faq.q3.answer">Да, мы работаем по системе полной предоплаты. Но все финансовые обязательства фиксируются в электронном договоре, который подписывается вами усиленной квалифицированной или простой ЭП до момента перечисления средств. В договоре четко прописаны артикулы, сроки, штрафные санкции за срыв поставки и гарантийные обязательства. Это официальный документ, имеющий юридическую силу, поэтому вы защищены наравне с офлайн-сделками. Мы несем полную ответственность за выполнение условий, а электронный формат удобен тем, что вы получаете скан договора мгновенно и не тратите время на курьеров.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4" data-i18n="faq.q4.title">Какие сроки изготовления? И как контролировать процесс, раз я уже оплатил заказ?</button>
+                <div class="faq-answer" id="faq-answer-4" aria-hidden="true">
+                  <p data-i18n="faq.q4.answer">Сроки зависят от сложности (в среднем от 5 до 25 рабочих дней). После подписания договора и поступления предоплаты менеджер предоставляет вам доступ к закрытому чату или личному кабинету, где мы высылаем фотоотчеты с этапов штамповки, сварки и термообработки. Это позволяет вам видеть, что металл пущен в работу именно под ваш номер заказа, и вы понимаете, на что пошли ваши деньги.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-5" data-i18n="faq.q5.title">Вы доставляете по всей России? Включена ли доставка в стоимость цепи?</button>
+                <div class="faq-answer" id="faq-answer-5" aria-hidden="true">
+                  <p data-i18n="faq.q5.answer">Мы осуществляем доставку абсолютно во все регионы РФ — от Калининграда до Камчатки (автотранспортом, ЖД или авиа, в зависимости от массы и срочности). Доставка не включена в стоимость цепи и рассчитывается отдельно исходя из тарифов перевозчика. Однако мы оказываем полное логистическое сопровождение: помогаем выбрать оптимальный маршрут, страхуем груз и предоставляем все закрывающие документы (ТН, счет-фактура). Отправка происходит только после полной готовности партии и ее приемки вами по фото/видео на производстве.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <div class="modal" id="catalog-modal" aria-hidden="true">
+      <div class="modal__overlay" data-modal-close></div>
+      <div class="modal__content">
+        <button class="modal__close" type="button" data-i18n-aria="catalog.modalCloseAria" aria-label="Закрыть">&times;</button>
+        <h2 class="modal__title" id="modal-title"></h2>
+        <div class="modal__products" id="modal-products"></div>
+      </div>
+    </div>
+
+      <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__copy" data-i18n="footer.copy">© 2026 Завод Цепей имени Кирова</p>
+      <div class="footer__contacts">
+        <p>+7 (904) 515-19-27</p>
+        <p>zakaz@ZCK.ru</p>
+      </div>
+<!--       <div class="footer__socials">
+        <a href="#" data-i18n="footer.social1">Соцсеть 1</a>
+        <a href="#" data-i18n="footer.social2">Соцсеть 2</a>
+      </div> -->
+      <nav class="footer__nav">
+        <a href="#about" data-i18n="footer.nav.about">О заводе</a>
+        <a href="#clients" data-i18n="footer.nav.clients">Клиентам</a>
+        <a href="#contacts" data-i18n="footer.nav.contacts">Контакты</a>
+        <a href="./privacy-policy.html" data-i18n="footer.nav.privacy">Политика конфиденциальности</a>
+      </nav>
+    </div>
+  </footer>
+
+  </main>
+
+
+
+  <button type="button" class="sticky-request-btn js-open-request" data-i18n="requestForm.stickyButton" data-i18n-aria="requestForm.stickyButton" aria-label="Оставить заявку">Оставить заявку</button>
+
+  <div class="modal request-modal" id="request-modal" aria-hidden="true">
+    <div class="modal__overlay request-modal__overlay" data-modal-close></div>
+    <div class="modal__content request-modal__content">
+      <button class="modal__close request-modal__close" type="button" data-i18n-aria="requestForm.closeAria" aria-label="Закрыть">&times;</button>
+      <h2 class="modal__title request-modal__title" data-i18n="requestForm.title">Оставить заявку</h2>
+      <form class="request-form" id="request-form" novalidate>
+        <div class="form-group">
+          <label for="request-name"><span data-i18n="requestForm.name">ФИО</span> <span class="required">*</span></label>
+          <input type="text" id="request-name" name="name" required>
+          <span class="error-message" id="error-name"></span>
+        </div>
+        <div class="form-group">
+          <label for="request-phone"><span data-i18n="requestForm.phone">Телефон</span> <span class="required">*</span></label>
+          <input type="tel" id="request-phone" name="phone" required data-i18n-placeholder="requestForm.phonePlaceholder" placeholder="+7 (___) ___-__-__">
+          <span class="error-message" id="error-phone"></span>
+        </div>
+        <div class="form-group">
+          <label for="request-email"><span data-i18n="requestForm.email">E-mail</span> <span class="required">*</span></label>
+          <input type="email" id="request-email" name="email" required>
+          <span class="error-message" id="error-email"></span>
+        </div>
+        <div class="form-group">
+          <label for="request-message" data-i18n="requestForm.message">Сообщение / ТЗ</label>
+          <textarea id="request-message" name="message" rows="4" data-i18n-placeholder="requestForm.messagePlaceholder" placeholder="Сообщение"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="request-files" data-i18n="requestForm.files">Прикрепить файлы (до 5 файлов, max 10 МБ каждый)</label>
+          <input type="file" id="request-files" name="files" multiple accept=".pdf,.jpg,.jpeg,.png,.dwg,.doc,.docx,.xls,.xlsx">
+          <span class="error-message" id="error-files"></span>
+          <ul class="file-list" id="file-list"></ul>
+        </div>
+        <div class="form-group form-group--honeypot" aria-hidden="true">
+          <label for="request-honeypot">Не заполняйте это поле</label>
+          <input type="text" id="request-honeypot" name="honeypot" tabindex="-1" autocomplete="off">
+        </div>
+        <button type="submit" class="btn btn--primary request-form__submit" data-i18n="requestForm.submit">Отправить</button>
+      </form>
+      <div class="request-success" id="request-success" hidden>
+        <p data-i18n="requestForm.success">Спасибо! Ваша заявка отправлена.</p>
+        <button type="button" class="btn btn--primary" id="request-success-btn" data-i18n="requestForm.close">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/translations.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/catalog.js"></script>
+</body>
+</html>

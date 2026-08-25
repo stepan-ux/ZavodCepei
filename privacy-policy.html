@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Политика конфиденциальности | Завод промышленных цепей</title>
+  <meta name="description" content="Политика обработки персональных данных.">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <a href="./index.html" class="logo" data-i18n="header.logo">Логотип</a>
+      <button class="hamburger" type="button" data-i18n-aria="header.aria.openMenu" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <ul class="nav__list">
+          <li><a href="./catalog.html" data-i18n="header.menu.catalog">Каталог</a></li>
+          <li><a href="./index.html#about" data-i18n="header.menu.about">О заводе</a></li>
+          <li><a href="./index.html#clients" data-i18n="header.menu.clients">Клиентам</a></li>
+          <li><a href="./index.html#contacts" data-i18n="header.menu.contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <a href="tel:+70000000000">+7 (000) 000-00-00</a>
+        <a href="mailto:info@example.com">info@example.com</a>
+        <button class="header__callback js-open-request" type="button" data-i18n="header.callback">Заказать звонок</button>
+      </div>
+      <div class="lang-switcher">
+        <button class="lang-switcher__btn lang-switcher__btn--active" type="button" data-lang="ru">RU</button>
+        <button class="lang-switcher__btn" type="button" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="privacy">
+      <div class="privacy__container">
+        <h1 class="privacy__title" data-i18n="privacy.title">Политика конфиденциальности</h1>
+        <p data-i18n="privacy.text1">Здесь будет размещён текст политики обработки персональных данных.</p>
+        <p data-i18n="privacy.text2">Данный текст является заглушкой и будет заменён на актуальную версию.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__copy" data-i18n="footer.copy">© 2026 Название компании</p>
+      <div class="footer__contacts">
+        <p>+7 (000) 000-00-00</p>
+        <p>info@example.com</p>
+      </div>
+      <div class="footer__socials">
+        <a href="#" data-i18n="footer.social1">Соцсеть 1</a>
+        <a href="#" data-i18n="footer.social2">Соцсеть 2</a>
+      </div>
+      <nav class="footer__nav">
+        <a href="./index.html#about" data-i18n="footer.nav.about">О заводе</a>
+        <a href="./index.html#clients" data-i18n="footer.nav.clients">Клиентам</a>
+        <a href="./index.html#contacts" data-i18n="footer.nav.contacts">Контакты</a>
+        <a href="./privacy-policy.html" data-i18n="footer.nav.privacy">Политика конфиденциальности</a>
+      </nav>
+    </div>
+  </footer>
+
+  <button type="button" class="sticky-request-btn js-open-request" data-i18n="requestForm.stickyButton" data-i18n-aria="requestForm.stickyButton" aria-label="Оставить заявку">Оставить заявку</button>
+
+  <div class="modal request-modal" id="request-modal" aria-hidden="true">
+    <div class="modal__overlay request-modal__overlay" data-modal-close></div>
+    <div class="modal__content request-modal__content">
+      <button class="modal__close request-modal__close" type="button" data-i18n-aria="requestForm.closeAria" aria-label="Закрыть">&times;</button>
+      <h2 class="modal__title request-modal__title" data-i18n="requestForm.title">Оставить заявку</h2>
+      <form class="request-form" id="request-form" novalidate>
+        <div class="form-group">
+          <label for="request-name"><span data-i18n="requestForm.name">ФИО</span> <span class="required">*</span></label>
+          <input type="text" id="request-name" name="name" required>
+          <span class="error-message" id="error-name"></span>
+        </div>
+        <div class="form-group">
+          <label for="request-phone"><span data-i18n="requestForm.phone">Телефон</span> <span class="required">*</span></label>
+          <input type="tel" id="request-phone" name="phone" required data-i18n-placeholder="requestForm.phonePlaceholder" placeholder="+7 (___) ___-__-__">
+          <span class="error-message" id="error-phone"></span>
+        </div>
+        <div class="form-group">
+          <label for="request-email"><span data-i18n="requestForm.email">E-mail</span> <span class="required">*</span></label>
+          <input type="email" id="request-email" name="email" required>
+          <span class="error-message" id="error-email"></span>
+        </div>
+        <div class="form-group">
+          <label for="request-message" data-i18n="requestForm.message">Сообщение / ТЗ</label>
+          <textarea id="request-message" name="message" rows="4" data-i18n-placeholder="requestForm.messagePlaceholder" placeholder="Сообщение"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="request-files" data-i18n="requestForm.files">Прикрепить файлы (до 5 файлов, max 10 МБ каждый)</label>
+          <input type="file" id="request-files" name="files" multiple accept=".pdf,.jpg,.jpeg,.png,.dwg,.doc,.docx,.xls,.xlsx">
+          <span class="error-message" id="error-files"></span>
+          <ul class="file-list" id="file-list"></ul>
+        </div>
+        <div class="form-group form-group--honeypot" aria-hidden="true">
+          <label for="request-honeypot">Не заполняйте это поле</label>
+          <input type="text" id="request-honeypot" name="honeypot" tabindex="-1" autocomplete="off">
+        </div>
+        <button type="submit" class="btn btn--primary request-form__submit" data-i18n="requestForm.submit">Отправить</button>
+      </form>
+      <div class="request-success" id="request-success" hidden>
+        <p data-i18n="requestForm.success">Спасибо! Ваша заявка отправлена.</p>
+        <button type="button" class="btn btn--primary" id="request-success-btn" data-i18n="requestForm.close">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/translations.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
