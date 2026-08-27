@@ -1,0 +1,19 @@
+{
+    "name": "Завод Цепей имени Кирова",
+    "short_name": "ЗЦК",
+    "icons": [
+        {
+            "src": "./logo_icon_192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./logo_icon_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#fd5226",
+    "background_color": "#0d0801",
+    "display": "standalone"
+}

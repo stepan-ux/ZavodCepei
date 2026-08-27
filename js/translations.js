@@ -4,7 +4,8 @@ var translations = {
     header: {
       callback: 'Заказать звонок',
       aria: {
-        openMenu: 'Открыть меню'
+        openMenu: 'Открыть меню',
+        home: 'На главную'
       },
       menu: {
         catalog: 'Каталог',
@@ -62,18 +63,18 @@ var translations = {
       title: 'О заводе',
       history: {
         title: 'История и миссия',
-        text: 'Завод начинал свой путь в конце 90‑х как небольшое инструментальное производство, специализировавшееся на ремонте и восстановлении тяговых органов для горно-обогатительных комбинатов. Постепенно, накапливая опыт реверсивного инжиниринга, мы перешли к собственному выпуску цепей, осваивая сначала простые калиброванные, а затем и высоконагруженные изделия для конвейеров и элеваторов. Сегодня наша производственная площадка — это результат эволюции, где многолетняя практика сочетается с современными подходами к организации процессов.',
-        text: 'Наша миссия — не просто поставлять металлоизделия, а предлагать решения, продлевающие межремонтный интервал оборудования заказчика. Мы считаем своей задачей снять с клиента головную боль по поиску аналогов, импортозамещению и адаптации цепей к реальным условиям эксплуатации, от северных морозов до горячих цехов. При этом мы остаёмся гибким производством, где каждый заказ рассматривается как индивидуальная инженерная задача.'
+        text1: 'Завод начинал свой путь в конце 90‑х как небольшое инструментальное производство, специализировавшееся на ремонте и восстановлении тяговых органов для горно-обогатительных комбинатов. Постепенно, накапливая опыт реверсивного инжиниринга, мы перешли к собственному выпуску цепей, осваивая сначала простые калиброванные, а затем и высоконагруженные изделия для конвейеров и элеваторов. Сегодня наша производственная площадка — это результат эволюции, где многолетняя практика сочетается с современными подходами к организации процессов.',
+        text2: 'Наша миссия — не просто поставлять металлоизделия, а предлагать решения, продлевающие межремонтный интервал оборудования заказчика. Мы считаем своей задачей снять с клиента головную боль по поиску аналогов, импортозамещению и адаптации цепей к реальным условиям эксплуатации, от северных морозов до горячих цехов. При этом мы остаёмся гибким производством, где каждый заказ рассматривается как индивидуальная инженерная задача.'
       },
       production: {
         title: 'Производство и технологии',
-        text: 'На предприятии развёрнут полный цикл обработки металла: от резки проката и штамповки звеньев до термической обработки и финишной сборки. Основное оборудование — это универсальные автоматные линии и высокоточные станки с ЧПУ, позволяющие выдерживать допуски в пределах, требуемых для надёжного сцепления и плавного хода цепи. Особое внимание уделяется этапу закалки: мы используем регулируемые режимы термоупрочнения, подбирая их под конкретную марку стали, чтобы добиться баланса между твёрдостью поверхности и вязкостью сердцевины.',
-        text: 'В технологическом арсенале — методы индукционного нагрева, объёмно-закалочные среды и собственные приспособления для контроля натяжения при сборке. Применяются как контактная, так и стыковая сварка, причём каждая сварная точка проходит обязательную визуальную и инструментальную проверку. При этом мы не стремимся внедрять всё новое сразу, а поэтапно модернизируем участки, ориентируясь на реальный рост качества, а не на маркетинговые тренды.'
+        text1: 'На предприятии развёрнут полный цикл обработки металла: от резки проката и штамповки звеньев до термической обработки и финишной сборки. Основное оборудование — это универсальные автоматные линии и высокоточные станки с ЧПУ, позволяющие выдерживать допуски в пределах, требуемых для надёжного сцепления и плавного хода цепи. Особое внимание уделяется этапу закалки: мы используем регулируемые режимы термоупрочнения, подбирая их под конкретную марку стали, чтобы добиться баланса между твёрдостью поверхности и вязкостью сердцевины.',
+        text2: 'В технологическом арсенале — методы индукционного нагрева, объёмно-закалочные среды и собственные приспособления для контроля натяжения при сборке. Применяются как контактная, так и стыковая сварка, причём каждая сварная точка проходит обязательную визуальную и инструментальную проверку. При этом мы не стремимся внедрять всё новое сразу, а поэтапно модернизируем участки, ориентируясь на реальный рост качества, а не на маркетинговые тренды.'
       },
       quality: {
         title: 'Сертификаты и качество',
-        text: 'Система контроля качества на заводе построена по принципу «от входа до выхода»: каждая партия металла сопровождается паспортами поставщиков, а на промежуточных стадиях действуют внутренние регламенты замеров геометрии и твёрдости. Мы работаем в соответствии с национальными стандартами, подтверждая соответствие нашей продукции требованиям промышленной безопасности и надёжности для ответственных узлов машин.',
-        text: 'Кроме того, производственная система регулярно проходит оценку независимых органов — как отечественных, так и международных, что подтверждает её соответствие принятым в отрасли нормам управления качеством. Однако главным сертификатом для нас остаётся долгая безаварийная работа цепей на действующих предприятиях и положительные акты приёмочных испытаний, подписанные техническими службами заказчиков. Мы открыты для дополнительных проверок и испытаний по требованию клиента, но настаиваем на том, чтобы критерии качества обсуждались на этапе конструкторской проработки заказа — так мы исключаем разночтения на выходе.'
+        text1: 'Система контроля качества на заводе построена по принципу «от входа до выхода»: каждая партия металла сопровождается паспортами поставщиков, а на промежуточных стадиях действуют внутренние регламенты замеров геометрии и твёрдости. Мы работаем в соответствии с национальными стандартами, подтверждая соответствие нашей продукции требованиям промышленной безопасности и надёжности для ответственных узлов машин.',
+        text2: 'Кроме того, производственная система регулярно проходит оценку независимых органов — как отечественных, так и международных, что подтверждает её соответствие принятым в отрасли нормам управления качеством. Однако главным сертификатом для нас остаётся долгая безаварийная работа цепей на действующих предприятиях и положительные акты приёмочных испытаний, подписанные техническими службами заказчиков. Мы открыты для дополнительных проверок и испытаний по требованию клиента, но настаиваем на том, чтобы критерии качества обсуждались на этапе конструкторской проработки заказа — так мы исключаем разночтения на выходе.'
       },
       fact: 'Доставка в любой регион РФ'
     },
@@ -126,7 +127,7 @@ var translations = {
       }
     },
     footer: {
-      copy: '© 2026 Название компании',
+      copy: '© 2026 Завод Цепей имени Кирова',
       social1: 'Соцсеть 1',
       social2: 'Соцсеть 2',
       nav: {
@@ -185,7 +186,8 @@ var translations = {
     header: {
       callback: 'Request a call',
       aria: {
-        openMenu: 'Open menu'
+        openMenu: 'Open menu',
+        home: 'Home'
       },
       menu: {
         catalog: 'Catalog',
@@ -243,18 +245,18 @@ var translations = {
       title: 'About the plant',
       history: {
         title: 'History and mission',
-        text: 'The plant began its journey in the late 1990s as a small tool‑making enterprise specializing in the repair and restoration of traction elements for mining and processing plants. Gradually, as we accumulated experience in reverse engineering, we moved on to producing our own chains, first mastering simple calibrated products and then moving on to high‑load items for conveyors and elevators. Today, our production site is the result of evolution, combining many years of practice with modern approaches to process organization.',
-        text: 'Our mission is not just to supply metal products, but to offer solutions that extend the maintenance interval of the customer’s equipment. We consider it our task to relieve the client of the headache of finding analogues, import substitution, and adapting chains to real operating conditions — from northern frosts to hot workshops. At the same time, we remain a flexible production facility where each order is treated as an individual engineering task.'
+        text1: 'The plant began its journey in the late 1990s as a small tool‑making enterprise specializing in the repair and restoration of traction elements for mining and processing plants. Gradually, as we accumulated experience in reverse engineering, we moved on to producing our own chains, first mastering simple calibrated products and then moving on to high‑load items for conveyors and elevators. Today, our production site is the result of evolution, combining many years of practice with modern approaches to process organization.',
+        text2: 'Our mission is not just to supply metal products, but to offer solutions that extend the maintenance interval of the customer’s equipment. We consider it our task to relieve the client of the headache of finding analogues, import substitution, and adapting chains to real operating conditions — from northern frosts to hot workshops. At the same time, we remain a flexible production facility where each order is treated as an individual engineering task.'
       },
       production: {
         title: 'Production and technology',
-        text: 'The enterprise has implemented a full metalworking cycle: from cutting rolled metal and stamping links to heat treatment and final assembly. The main equipment consists of universal automatic lines and high‑precision CNC machines, which make it possible to maintain tolerances within the limits required for reliable chain engagement and smooth operation. Special attention is paid to the hardening stage: we use adjustable heat‑hardening regimes, selecting them for a specific steel grade to achieve a balance between surface hardness and core toughness.',
-        text: 'The technological arsenal includes induction heating methods, volume quenching media, and proprietary devices for monitoring tension during assembly. Both contact and butt welding are used, and each weld point undergoes mandatory visual and instrumental inspection. At the same time, we do not strive to implement everything new at once; instead, we modernize sections step by step, focusing on real quality improvements rather than on marketing trends.'
+        text1: 'The enterprise has implemented a full metalworking cycle: from cutting rolled metal and stamping links to heat treatment and final assembly. The main equipment consists of universal automatic lines and high‑precision CNC machines, which make it possible to maintain tolerances within the limits required for reliable chain engagement and smooth operation. Special attention is paid to the hardening stage: we use adjustable heat‑hardening regimes, selecting them for a specific steel grade to achieve a balance between surface hardness and core toughness.',
+        text2: 'The technological arsenal includes induction heating methods, volume quenching media, and proprietary devices for monitoring tension during assembly. Both contact and butt welding are used, and each weld point undergoes mandatory visual and instrumental inspection. At the same time, we do not strive to implement everything new at once; instead, we modernize sections step by step, focusing on real quality improvements rather than on marketing trends.'
       },
       quality: {
         title: 'Certificates and quality',
-        text: 'The quality control system at the plant is built on the “from input to output” principle: each batch of metal is accompanied by supplier passports, and internal regulations for measuring geometry and hardness are in place at intermediate stages. We work in accordance with national standards, confirming that our products meet the requirements for industrial safety and reliability for critical machine components.',
-        text: 'In addition, the production system is regularly assessed by independent bodies — both domestic and international — which confirms its compliance with the quality management standards accepted in the industry. However, our main certification remains the long‑term trouble‑free operation of the circuits at existing enterprises and the positive acceptance test reports signed by the customers’ technical departments. We are open to additional inspections and tests at the client’s request, but we insist that the quality criteria be discussed at the stage of the order’s design development — this way we eliminate any discrepancies in the final output.'
+        text1: 'The quality control system at the plant is built on the “from input to output” principle: each batch of metal is accompanied by supplier passports, and internal regulations for measuring geometry and hardness are in place at intermediate stages. We work in accordance with national standards, confirming that our products meet the requirements for industrial safety and reliability for critical machine components.',
+        text2: 'In addition, the production system is regularly assessed by independent bodies — both domestic and international — which confirms its compliance with the quality management standards accepted in the industry. However, our main certification remains the long‑term trouble‑free operation of the chains at existing enterprises and the positive acceptance test reports signed by the customers’ technical departments. We are open to additional inspections and tests at the client’s request, but we insist that the quality criteria be discussed at the stage of the order’s design development — this way we eliminate any discrepancies in the final output.'
       },
       fact: 'Delivery to any region of Russia'
     },
@@ -307,7 +309,7 @@ var translations = {
       }
     },
     footer: {
-      copy: '© 2026 Company Name',
+      copy: '© 2026 Kirov Chain Plant',
       social1: 'Social 1',
       social2: 'Social 2',
       nav: {
@@ -349,7 +351,7 @@ var translations = {
       onRequest: 'on request',
       modalCloseAria: 'Close',
       requestPrice: 'Request price',
-      stepLabel: 'Pitch:',
+      stepLabel: 'Step:',
       loadLabel: 'Load:',
       errors: {
         loadError: 'Failed to load catalog. Please try again later.'

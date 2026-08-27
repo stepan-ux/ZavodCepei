@@ -1,119 +1,302 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Политика конфиденциальности | Завод промышленных цепей</title>
-  <meta name="description" content="Политика обработки персональных данных.">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности | Завод промышленных цепей</title>
+    <meta name="description" content="Политика обработки персональных данных.">
 
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <header class="header">
-    <div class="header__container">
-      <a href="./index.html" class="logo" data-i18n="header.logo">Логотип</a>
-      <button class="hamburger" type="button" data-i18n-aria="header.aria.openMenu" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
-        <span class="hamburger__line"></span>
-        <span class="hamburger__line"></span>
-        <span class="hamburger__line"></span>
-      </button>
-      <nav class="nav" id="main-nav">
-        <ul class="nav__list">
-          <li><a href="./catalog.html" data-i18n="header.menu.catalog">Каталог</a></li>
-          <li><a href="./index.html#about" data-i18n="header.menu.about">О заводе</a></li>
-          <li><a href="./index.html#clients" data-i18n="header.menu.clients">Клиентам</a></li>
-          <li><a href="./index.html#contacts" data-i18n="header.menu.contacts">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="header__contacts">
-        <a href="tel:+70000000000">+7 (000) 000-00-00</a>
-        <a href="mailto:info@example.com">info@example.com</a>
-        <button class="header__callback js-open-request" type="button" data-i18n="header.callback">Заказать звонок</button>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="./index.html" class="logo" data-i18n-aria="header.aria.home"
+          aria-label="На главную"></a>
+        <button class="hamburger" type="button"
+          data-i18n-aria="header.aria.openMenu" aria-label="Открыть меню"
+          aria-expanded="false" aria-controls="main-nav">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+        <nav class="nav" id="main-nav">
+          <ul class="nav__list">
+            <li><a href="./index.html#catalog"
+                data-i18n="header.menu.catalog">Каталог</a></li>
+            <li><a href="./index.html#about" data-i18n="header.menu.about">О
+                заводе</a></li>
+            <li><a href="./index.html#clients"
+                data-i18n="header.menu.clients">Клиентам</a></li>
+            <li><a href="./index.html#contacts"
+                data-i18n="header.menu.contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__contacts">
+          <a href="tel:+79045151927">+7 (904) 515-19-27</a>
+          <a href="mailto:zakaz@ZCK.ru">zakaz@ZCK.ru</a>
+          <button class="header__callback js-open-request" type="button"
+            data-i18n="header.callback">Заказать звонок</button>
+        </div>
+        <div class="lang-switcher">
+          <button class="lang-switcher__btn lang-switcher__btn--active"
+            type="button" data-lang="ru">RU</button>
+          <button class="lang-switcher__btn" type="button"
+            data-lang="en">EN</button>
+        </div>
       </div>
-      <div class="lang-switcher">
-        <button class="lang-switcher__btn lang-switcher__btn--active" type="button" data-lang="ru">RU</button>
-        <button class="lang-switcher__btn" type="button" data-lang="en">EN</button>
+    </header>
+
+    <main class="scroll">
+      <section class="privacy">
+        <div class="privacy__container">
+          <h1 class="privacy__title">Политика конфиденциальности</h1>
+
+          <p><strong>Дата вступления в силу:</strong> 27 августа 2026 г.</p>
+
+          <h2>1. Общие положения</h2>
+          <p>Настоящая Политика конфиденциальности (далее – Политика) регулирует
+            порядок обработки и защиты персональных данных пользователей
+            веб-сайта <strong>«Завод Цепей имени Кирова»</strong> (далее –
+            Сайт), расположенного по адресу <em>(укажите URL)</em>.</p>
+<!-- -->
+          <p><strong>Важно:</strong> Данный Сайт является
+            <strong>демонстрационным проектом</strong>, созданным исключительно
+            для портфолио и не представляющим ни одного реально существующего
+            завода, предприятия или коммерческой организации. Все названия,
+            бренды, логотипы, контактные данные и описания продукции являются
+            вымышленными и используются только для демонстрации
+            функциональности. Любые совпадения с реальными лицами, компаниями
+            или товарами случайны.</p>
+
+          <p>Сайт не является коммерческим продуктом, не осуществляет продажу
+            товаров и не оказывает реальных услуг. Целью сайта является
+            исключительно техническая демонстрация возможностей вёрстки, дизайна
+            и интерактивных элементов.</p>
+
+          <p>Использование Сайта означает безоговорочное согласие с настоящей
+            Политикой. Если вы не согласны с условиями, пожалуйста, покиньте
+            Сайт.</p>
+
+          <h2>2. Какие данные собираются</h2>
+          <p>Сайт собирает персональные данные, которые вы добровольно
+            предоставляете при заполнении форм обратной связи, заявки или
+            запроса коммерческого предложения:</p>
+          <ul>
+            <li><strong>ФИО</strong> (обязательное поле);</li>
+            <li><strong>Номер телефона</strong> (обязательное поле);</li>
+            <li><strong>Адрес электронной почты</strong> (обязательное
+              поле);</li>
+            <li><strong>Текст сообщения или техническое задание</strong>
+              (необязательное поле);</li>
+            <li><strong>Прикреплённые файлы</strong> (до 5 файлов, форматы:
+              .pdf, .jpg, .png, .dwg, .doc, .docx, .xls, .xlsx, размер до 10 МБ
+              каждый).</li>
+          </ul>
+          <p>Кроме того, технические системы хостинга могут автоматически
+            собирать стандартные данные, передаваемые браузером:</p>
+          <ul>
+            <li>IP-адрес;</li>
+            <li>тип браузера и его версия;</li>
+            <li>операционная система;</li>
+            <li>страница, с которой вы перешли на Сайт (referrer);</li>
+            <li>дата и время запроса;</li>
+            <li>файлы cookies (только сессионные, не содержащие личной
+              информации).</li>
+          </ul>
+
+          <h2>3. Цель сбора данных</h2>
+          <p>Персональные данные используются исключительно для:</p>
+          <ul>
+            <li>обработки и отправки ответа на ваше обращение (демонстрация
+              работы формы);</li>
+            <li>возможности связаться с вами для уточнения деталей запроса (в
+              рамках демонстрации);</li>
+            <li>улучшения работы Сайта и его адаптации под нужды посетителей
+              (аналитика обезличенных данных).</li>
+          </ul>
+          <p><strong>Никакие персональные данные не используются для маркетинга,
+              рекламы, передачи третьим лицам или иных целей, не указанных в
+              настоящей Политике.</strong></p>
+
+          <h2>4. Как обрабатываются данные</h2>
+          <p>Все данные, введённые в формы, передаются через защищённое
+            соединение (SSL) на внешние сервисы обработки форм (<a
+              href="https://www.emailjs.com" target="_blank">EmailJS</a> или <a
+              href="https://formspree.io" target="_blank">Formspree</a>),
+            которые отправляют сообщение на указанный в настройках сайта
+            электронный адрес. Данные не сохраняются в базе данных сайта и не
+            хранятся на сервере хостинга.</p>
+          <p>Технические логи хостинга могут сохраняться в течение ограниченного
+            времени для обеспечения работоспособности и безопасности, но не
+            используются для идентификации конкретных пользователей.</p>
+
+          <h2>5. Передача данных третьим лицам</h2>
+          <p>Мы не передаём ваши персональные данные третьим лицам, за
+            исключением случаев, когда это необходимо для отправки уведомления о
+            заявке (использование внешних почтовых сервисов). Также данные могут
+            быть раскрыты по законному требованию государственных органов в
+            порядке, установленном законодательством Российской Федерации.</p>
+
+          <h2>6. Права пользователей</h2>
+          <p>Вы имеете право:</p>
+          <ul>
+            <li>получить информацию о том, какие данные о вас хранятся;</li>
+            <li>запросить исправление или удаление ваших персональных
+              данных;</li>
+            <li>отозвать своё согласие на обработку данных в любое время.</li>
+          </ul>
+          <p>Для реализации этих прав свяжитесь с нами через контактную форму на
+            Сайте или по электронной почте, указанной в разделе «Контакты».</p>
+
+          <h2>7. Использование файлов cookie</h2>
+          <p>Сайт использует минимальный набор технических cookie-файлов,
+            необходимых для обеспечения работы формы и сеанса связи. Мы не
+            используем аналитические или трекинговые cookie, а также не передаём
+            информацию о посещениях третьим лицам.</p>
+
+          <h2>8. Защита данных</h2>
+          <p>Мы принимаем разумные меры для защиты ваших персональных данных от
+            несанкционированного доступа, изменения, раскрытия или уничтожения.
+            В частности, используется SSL-сертификат для шифрования передаваемой
+            информации.</p>
+
+          <h2>9. Демонстрационный статус сайта</h2>
+          <p><strong>Пожалуйста, обратите внимание:</strong></p>
+          <ul>
+            <li>Сайт является <strong>демонстрационным</strong> и создан в
+              учебно-портфолийных целях.</li>
+            <li>Все материалы, включая название завода, логотип, описания
+              продукции, цены, контактные данные, являются
+              <strong>вымышленными</strong>.</li>
+            <li>Сайт <strong>не осуществляет</strong> реальную продажу цепей или
+              иных товаров, не заключает договоры и не оказывает услуги.</li>
+            <li>Разработчик сайта не несёт ответственности за любые убытки,
+              прямые или косвенные, возникшие в результате использования Сайта
+              или его содержимого.</li>
+            <li>Сайт предоставляется «как есть» без каких-либо гарантий.</li>
+          </ul>
+
+          <h2>10. Отказ от ответственности</h2>
+          <p>Разработчик (исполнитель) не является производителем или продавцом
+            продукции, представленной на Сайте. Любые заявки, отправленные через
+            формы, обрабатываются исключительно с целью демонстрации работы
+            функционала и не являются офертой или обязательством к заключению
+            договора.</p>
+
+          <h2>11. Изменения в Политике конфиденциальности</h2>
+          <p>Мы оставляем за собой право вносить изменения в настоящую Политику.
+            Актуальная версия всегда опубликована на этой странице с указанием
+            даты последнего обновления. Рекомендуем периодически проверять
+            страницу.</p>
+
+          <h2>12. Контакты</h2>
+          <p>Если у вас возникли вопросы по настоящей Политике, вы можете
+            связаться с нами:</p>
+          <ul>
+            <li>по электронной почте: <a
+                href="mailto:FolomS@yandex.ru">FolomS@yandex.ru</a>
+              ;</li>
+            <li>через форму обратной связи на Сайте (раздел «Контакты»).</li>
+          </ul>
+
+          <p><small>© 2026 Разработчик сайта. Все права защищены.</small></p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <p class="footer__copy" data-i18n="footer.copy">© 2026 Завод Цепей
+            имени Кирова</p>
+          <div class="footer__contacts">
+            <p>+7 (904) 515-19-27</p>
+            <p>zakaz@ZCK.ru</p>
+          </div>
+          <nav class="footer__nav">
+            <a href="./index.html#about" data-i18n="footer.nav.about">О
+              заводе</a>
+            <a href="./index.html#clients"
+              data-i18n="footer.nav.clients">Клиентам</a>
+            <a href="./index.html#contacts"
+              data-i18n="footer.nav.contacts">Контакты</a>
+            <a href="./privacy-policy.html"
+              data-i18n="footer.nav.privacy">Политика конфиденциальности</a>
+          </nav>
+        </div>
+      </footer>
+    </main>
+
+    <button type="button" class="sticky-request-btn js-open-request"
+      data-i18n="requestForm.stickyButton"
+      data-i18n-aria="requestForm.stickyButton"
+      aria-label="Оставить заявку">Оставить заявку</button>
+
+    <div class="modal request-modal" id="request-modal" aria-hidden="true">
+      <div class="modal__overlay request-modal__overlay" data-modal-close></div>
+      <div class="modal__content request-modal__content">
+        <button class="modal__close request-modal__close" type="button"
+          data-i18n-aria="requestForm.closeAria"
+          aria-label="Закрыть">&times;</button>
+        <h2 class="modal__title request-modal__title"
+          data-i18n="requestForm.title">Оставить заявку</h2>
+        <form class="request-form" id="request-form" novalidate>
+          <div class="form-group">
+            <label for="request-name"><span
+                data-i18n="requestForm.name">ФИО</span> <span
+                class="required">*</span></label>
+            <input type="text" id="request-name" name="name" required>
+            <span class="error-message" id="error-name"></span>
+          </div>
+          <div class="form-group">
+            <label for="request-phone"><span
+                data-i18n="requestForm.phone">Телефон</span> <span
+                class="required">*</span></label>
+            <input type="tel" id="request-phone" name="phone" required
+              data-i18n-placeholder="requestForm.phonePlaceholder"
+              placeholder="+7 (___) ___-__-__">
+            <span class="error-message" id="error-phone"></span>
+          </div>
+          <div class="form-group">
+            <label for="request-email"><span
+                data-i18n="requestForm.email">E-mail</span> <span
+                class="required">*</span></label>
+            <input type="email" id="request-email" name="email" required>
+            <span class="error-message" id="error-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="request-message"
+              data-i18n="requestForm.message">Сообщение / ТЗ</label>
+            <textarea id="request-message" name="message" rows="4"
+              data-i18n-placeholder="requestForm.messagePlaceholder"
+              placeholder="Сообщение"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="request-files" data-i18n="requestForm.files">Прикрепить
+              файлы (до 5 файлов, max 10 МБ каждый)</label>
+            <input type="file" id="request-files" name="files" multiple
+              accept=".pdf,.jpg,.jpeg,.png,.dwg,.doc,.docx,.xls,.xlsx">
+            <span class="error-message" id="error-files"></span>
+            <ul class="file-list" id="file-list"></ul>
+          </div>
+          <div class="form-group form-group--honeypot" aria-hidden="true">
+            <label for="request-honeypot">Не заполняйте это поле</label>
+            <input type="text" id="request-honeypot" name="honeypot"
+              tabindex="-1" autocomplete="off">
+          </div>
+          <button type="submit" class="btn btn--primary request-form__submit"
+            data-i18n="requestForm.submit">Отправить</button>
+        </form>
+        <div class="request-success" id="request-success" hidden>
+          <p data-i18n="requestForm.success">Спасибо! Ваша заявка
+            отправлена.</p>
+          <button type="button" class="btn btn--primary"
+            id="request-success-btn"
+            data-i18n="requestForm.close">Закрыть</button>
+        </div>
       </div>
     </div>
-  </header>
 
-  <main>
-    <section class="privacy">
-      <div class="privacy__container">
-        <h1 class="privacy__title" data-i18n="privacy.title">Политика конфиденциальности</h1>
-        <p data-i18n="privacy.text1">Здесь будет размещён текст политики обработки персональных данных.</p>
-        <p data-i18n="privacy.text2">Данный текст является заглушкой и будет заменён на актуальную версию.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__container">
-      <p class="footer__copy" data-i18n="footer.copy">© 2026 Название компании</p>
-      <div class="footer__contacts">
-        <p>+7 (000) 000-00-00</p>
-        <p>info@example.com</p>
-      </div>
-      <div class="footer__socials">
-        <a href="#" data-i18n="footer.social1">Соцсеть 1</a>
-        <a href="#" data-i18n="footer.social2">Соцсеть 2</a>
-      </div>
-      <nav class="footer__nav">
-        <a href="./index.html#about" data-i18n="footer.nav.about">О заводе</a>
-        <a href="./index.html#clients" data-i18n="footer.nav.clients">Клиентам</a>
-        <a href="./index.html#contacts" data-i18n="footer.nav.contacts">Контакты</a>
-        <a href="./privacy-policy.html" data-i18n="footer.nav.privacy">Политика конфиденциальности</a>
-      </nav>
-    </div>
-  </footer>
-
-  <button type="button" class="sticky-request-btn js-open-request" data-i18n="requestForm.stickyButton" data-i18n-aria="requestForm.stickyButton" aria-label="Оставить заявку">Оставить заявку</button>
-
-  <div class="modal request-modal" id="request-modal" aria-hidden="true">
-    <div class="modal__overlay request-modal__overlay" data-modal-close></div>
-    <div class="modal__content request-modal__content">
-      <button class="modal__close request-modal__close" type="button" data-i18n-aria="requestForm.closeAria" aria-label="Закрыть">&times;</button>
-      <h2 class="modal__title request-modal__title" data-i18n="requestForm.title">Оставить заявку</h2>
-      <form class="request-form" id="request-form" novalidate>
-        <div class="form-group">
-          <label for="request-name"><span data-i18n="requestForm.name">ФИО</span> <span class="required">*</span></label>
-          <input type="text" id="request-name" name="name" required>
-          <span class="error-message" id="error-name"></span>
-        </div>
-        <div class="form-group">
-          <label for="request-phone"><span data-i18n="requestForm.phone">Телефон</span> <span class="required">*</span></label>
-          <input type="tel" id="request-phone" name="phone" required data-i18n-placeholder="requestForm.phonePlaceholder" placeholder="+7 (___) ___-__-__">
-          <span class="error-message" id="error-phone"></span>
-        </div>
-        <div class="form-group">
-          <label for="request-email"><span data-i18n="requestForm.email">E-mail</span> <span class="required">*</span></label>
-          <input type="email" id="request-email" name="email" required>
-          <span class="error-message" id="error-email"></span>
-        </div>
-        <div class="form-group">
-          <label for="request-message" data-i18n="requestForm.message">Сообщение / ТЗ</label>
-          <textarea id="request-message" name="message" rows="4" data-i18n-placeholder="requestForm.messagePlaceholder" placeholder="Сообщение"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="request-files" data-i18n="requestForm.files">Прикрепить файлы (до 5 файлов, max 10 МБ каждый)</label>
-          <input type="file" id="request-files" name="files" multiple accept=".pdf,.jpg,.jpeg,.png,.dwg,.doc,.docx,.xls,.xlsx">
-          <span class="error-message" id="error-files"></span>
-          <ul class="file-list" id="file-list"></ul>
-        </div>
-        <div class="form-group form-group--honeypot" aria-hidden="true">
-          <label for="request-honeypot">Не заполняйте это поле</label>
-          <input type="text" id="request-honeypot" name="honeypot" tabindex="-1" autocomplete="off">
-        </div>
-        <button type="submit" class="btn btn--primary request-form__submit" data-i18n="requestForm.submit">Отправить</button>
-      </form>
-      <div class="request-success" id="request-success" hidden>
-        <p data-i18n="requestForm.success">Спасибо! Ваша заявка отправлена.</p>
-        <button type="button" class="btn btn--primary" id="request-success-btn" data-i18n="requestForm.close">Закрыть</button>
-      </div>
-    </div>
-  </div>
-
-  <script src="./js/translations.js"></script>
-  <script src="./js/main.js"></script>
-</body>
+    <script src="./js/translations.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initCursorChain();
   initRequestForm();
   initFaqAccordion();
+  initStickySections();
 });
 
 /* ===== Language switcher ===== */
@@ -171,8 +172,8 @@ function initHeroSlider() {
 
   var $slider = jQuery(heroSlider);
 
-  function moveChain(event, slick, currentSlide) {
-    var slideIndex = typeof currentSlide === 'number' ? currentSlide : 0;
+  function moveChain(event, slick, currentSlide, nextSlide) {
+    var slideIndex = typeof nextSlide === 'number' ? nextSlide : (typeof currentSlide === 'number' ? currentSlide : 0);
     if (heroChain) {
       var offset = slideIndex * 500;
       heroChain.style.transform = 'translateX(-' + offset + 'px)';
@@ -213,11 +214,11 @@ function initCursorChain() {
   const ENABLED_BREAKPOINT = 1150;
 
   let isEnabled = window.innerWidth >= ENABLED_BREAKPOINT;
-  let mouseX = window.innerWidth / 2;
-  let mouseY = window.innerHeight / 2;
+  let mouseX = 40;
+  let mouseY = -20;
 
   // Массив узлов (nodes) длиной numNodes
-  const nodes = Array.from({ length: numNodes }, () => ({ x: mouseX, y: mouseY }));
+  const nodes = Array.from({ length: numNodes }, (_, i) => ({ x: mouseX, y: mouseY + i * LINK_LENGTH }));
 
   function updateEnabled() {
     isEnabled = window.innerWidth >= ENABLED_BREAKPOINT;
@@ -354,12 +355,13 @@ function initRequestForm() {
       var contactEmail = document.getElementById('contact-email');
       var contactMessage = document.getElementById('contact-message');
 
+      openRequestForm();
+
       if (form.elements.name && contactName) form.elements.name.value = contactName.value;
       if (phoneInput && contactPhone) phoneInput.value = contactPhone.value;
       if (form.elements.email && contactEmail) form.elements.email.value = contactEmail.value;
       if (form.elements.message && contactMessage) form.elements.message.value = contactMessage.value;
 
-      openRequestForm();
       contactForm.reset();
     });
   }
@@ -550,6 +552,32 @@ function initRequestForm() {
     selectedFiles = [];
     if (fileList) fileList.innerHTML = '';
   });
+}
+
+function initStickySections() {
+  var scroller = document.querySelector('.scroll');
+  if (!scroller) return;
+  var sections = Array.prototype.slice.call(scroller.querySelectorAll(':scope > section'));
+  if (!sections.length) return;
+
+  function update() {
+    var viewHeight = scroller.clientHeight;
+    sections.forEach(function (section) {
+      var overflow = section.offsetHeight - viewHeight;
+      section.style.setProperty('--stick-top', (overflow > 0 ? -overflow : 0) + 'px');
+    });
+  }
+
+  if (typeof ResizeObserver === 'function') {
+    var observer = new ResizeObserver(update);
+    observer.observe(scroller);
+    sections.forEach(function (section) { observer.observe(section); });
+  } else {
+    window.addEventListener('resize', update);
+  }
+  window.addEventListener('load', update);
+  document.addEventListener('languageChanged', update);
+  update();
 }
 
 /* ===== FAQ accordion ===== */
