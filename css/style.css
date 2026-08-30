@@ -23,7 +23,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 70px; /* фактическая высота хедера */
+  scroll-padding-top: var(--header-h, 70px); /* фактическая высота хедера */
 }
 
 body {
@@ -32,27 +32,6 @@ body {
   background-color: var(--color-bg);
   line-height: 1.6;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-html,
-body {
-  overflow: hidden; /* отключаем прокрутку всей страницы */
-  height: 100%;     /* чтобы они занимали ровно экран */
-}
-
-.scroll {
-  flex: 1 1 auto;
-  min-height: 0;
-  overflow-y: scroll;
-  scroll-behavior: smooth; /* опционально для плавности */
-}
-
-.hero {
-  position: sticky;
-  top: var(--stick-top, 0px);
-  background-color: var(--color-bg);
 }
 
 a {
@@ -86,12 +65,13 @@ textarea {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: var(--container-max);
+/*   max-width: var(--container-max); */
   margin: 0 auto;
   padding: 0 var(--gap);
 }
 
 .section-title {
+  font-family: 'RadiotechnikaRegular', Arial, Helvetica, sans-serif;
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -99,19 +79,25 @@ textarea {
 }
 
 /* ===== containres width adaptive ===== */
-.catalog__grid {
-  padding-left: calc(var(--gap) + 80px);   /* отступ слева = стандартный + ширина цепи */
-  padding-right: calc(var(--gap) + 80px);  /* отступ справа аналогично */
+@media (min-width: 765px) {
+  .catalog__grid {
+    padding-left: calc(var(--gap) + 80px);   /* отступ слева = стандартный + ширина цепи */
+    padding-right: calc(var(--gap) + 80px);  /* отступ справа аналогично */
+  }
+
+  .about {
+    padding: 5rem;
+  }
+
+  .clients__container {
+    padding-left: calc(var(--gap) + 40px);   /* отступ слева = стандартный + ширина цепи */
+    padding-right: calc(var(--gap) + 40px);  /* отступ справа аналогично */
+  }
 }
 
 .about__container {
   padding-left: calc(var(--gap) + 0px);   /* отступ слева = стандартный + ширина цепи */
   padding-right: calc(var(--gap) + 0px);  /* отступ справа аналогично */
-}
-
-.clients__container {
-  padding-left: calc(var(--gap) + 40px);   /* отступ слева = стандартный + ширина цепи */
-  padding-right: calc(var(--gap) + 40px);  /* отступ справа аналогично */
 }
 
 .hero__slide-content {
@@ -139,6 +125,7 @@ textarea {
 }
 
 .btn--primary {
+  font-family: 'RadiotechnikaRegular', Arial, Helvetica, sans-serif;
   background-color: var(--color-accent);
   color: var(--color-white);
 }
@@ -148,6 +135,7 @@ textarea {
 }
 
 .btn--secondary {
+  font-family: 'RadiotechnikaRegular', Arial, Helvetica, sans-serif;
   background-color: var(--color-hover);
   color: var(--color-text);
 }
@@ -166,6 +154,8 @@ textarea {
 }
 
 .header__container {
+  font-family: 'RadiotechnikaRegular', Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -174,12 +164,20 @@ textarea {
   padding-bottom: 1rem;
 }
 
-.logo {
+/* .logo {
   background-image: url('./../assets/img/logo.png');
   background-position: center;
   background-size: cover;
   width: 150px;
   height: 35px;
+} */
+
+.logo_img {
+  object-fit: contain;
+  height: 2rem;            /* относительный размер, зависит от базового шрифта */
+  width: auto;               /* ширина автоматически подстраивается под пропорции */
+  max-height: 100%;          /* чтобы не вылезать за границы хедера */
+  display: block;
 }
 
 .nav__list {
@@ -202,7 +200,14 @@ textarea {
   flex-direction: row;
   align-items: flex-end;
   gap: 1.25rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1305px){
+  .header__contacts {
+    flex-direction: column;
+    gap: 0.25rem;  
+  }
 }
 
 .header__contacts a:hover {
@@ -288,8 +293,10 @@ textarea {
 /* ===== Hero / Slick Slider ===== */
 .hero {
   position: sticky;
-  height: 90vh;
+  top: var(--stick-top, 0px);
+  height: calc(100vh - var(--header-h, 70px));
   min-height: 400px;
+  background-color: var(--color-bg);
   color: var(--color-white);
   text-align: center;
   z-index: 15;
@@ -349,11 +356,11 @@ textarea {
 }
 
 .hero .slick-prev {
-  left: 100px;
+  left: 14%;
 }
 
 .hero .slick-next {
-  right: 100px;
+  right: 14%;
 }
 
 .hero .slick-prev::before,
@@ -369,6 +376,7 @@ textarea {
 }
 
 .hero__title {
+  font-family: 'RadiotechnikaRegular', Arial, Helvetica, sans-serif;
   font-size: 3rem;
   line-height: 1.15;
   margin-bottom: 1rem;
@@ -376,6 +384,7 @@ textarea {
 }
 
 .hero__subtitle {
+  font-family: 'RadiotechnikaRegular', Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
   color: var(--color-hover);
   margin-bottom: 2rem;
@@ -395,6 +404,12 @@ textarea {
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+@media (max-height: 785px) {
+  .hero__actions {
+    display: none !important;
+  }
 }
 
 .hero__chain {
@@ -538,7 +553,7 @@ textarea {
 .about {
   position: sticky;
   top: var(--stick-top, 0px);
-  padding: 5rem;
+  min-height: calc(100vh - var(--header-h, 70px));
   background-color: var(--color-block);
   color: var(--color-hover);
   width: 100%;
@@ -550,12 +565,14 @@ textarea {
 }
 
 .about__subsection h3 {
+  font-family: 'RadiotechnikaRegular', Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   color: var(--color-accent);
   margin-bottom: 0.75rem;
 }
 
 .about__facts {
+  font-family: 'RadiotechnikaRegular', Arial, Helvetica, sans-serif;
   margin-top: 2rem;
   padding: 1.25rem;
   background-color: var(--color-text);
@@ -569,6 +586,7 @@ textarea {
 .clients {
   position: sticky;
   top: var(--stick-top, 0px);
+  min-height: calc(100vh - var(--header-h, 70px));
   padding: 5rem 0;
   background-color: var(--color-bg);
   z-index: 55;
@@ -582,6 +600,7 @@ textarea {
 }
 
 .clients__subsection h3 {
+  font-family: 'RadiotechnikaRegular', Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   color: var(--color-accent);
   margin-bottom: 0.75rem;
@@ -762,6 +781,12 @@ textarea {
 
 }
 
+@media (max-width: 450px) {
+  .hero__title {
+    font-size: 1.7rem;
+  }
+}
+
 /* @media (max-width: 1400px) {
   .catalog__grid {
   margin-left: 1%;
@@ -773,6 +798,7 @@ textarea {
 .catalog {
   position: sticky;
   top: var(--stick-top, 0px);
+  min-height: calc(100vh - var(--header-h, 70px));
   background-color: var(--color-bg);
   z-index: 25;
 }
@@ -785,6 +811,7 @@ textarea {
 }
 
 .catalog__title {
+  font-family: 'RadiotechnikaRegular', Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -820,6 +847,7 @@ textarea {
 }
 
 .category-card__title {
+  font-family: 'RadiotechnikaRegular', Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
   color: var(--color-text);
@@ -885,6 +913,7 @@ textarea {
 }
 
 .modal__title {
+  font-family: 'RadiotechnikaRegular', Arial, Helvetica, sans-serif;
   font-size: 1.75rem;
   margin-bottom: 1.5rem;
   color: var(--color-text);
